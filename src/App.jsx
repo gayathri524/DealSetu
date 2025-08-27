@@ -3039,7 +3039,7 @@ function AppContent() {
             }
         };
 
-    }, [user]); // This entire advanced hook re-runs only when the user logs in or out.
+    }, [user]);  // This entire advanced hook re-runs only when the user logs in or out.
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
             setIsDataReady(false);
